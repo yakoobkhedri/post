@@ -569,7 +569,7 @@ footer p,.accordionContent p{
     padding-right: 48px;
 }
 .pb-83{
-    padding-bottom: 83px;
+    padding-bottom: 83px !important;
 }
 .pr-custom {
     padding-right: calc((100% - 1298px) / 2);
@@ -1117,17 +1117,59 @@ input[type=number].error:focus {
 @media (max-width: 1070px) {
     #sidebar {
         position: fixed;
-        top: 0;
+        top: auto;
         bottom: 0;
-        right: -400px;
+        right: 0;
         transition: all .4s;
+        height: auto;
+        left: 0;
+        width: 96%;
+        margin-right: auto;
+        margin-left: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: 0px 0px 8px 0px #0000001A;
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
     }
 
     #sidebar.open {
         right: 0;
     }
+    #pannelList{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    #pannelList li > a:hover, #pannelList li > a.active,
+    #pannelList li > div:first-child.active, #pannelList li > div:first-child:hover, #pannelList li > div:first-child.active {
+        background-color: transparent;
+      }
     .d-1071-none{
-        display: block;
+        display: block !important;
+    }
+    .d-1071-hidden{
+        display: none !important;
+    }
+    .flex-1071-col{
+        flex-direction: column;
+    }
+    .p-1071-0{
+        padding: 0;
+    }
+    .pe-1071-0{
+        padding-right: 0 !important;
+    }
+    .overflow-1071-hidden{
+        overflow: hidden !important;
+    }
+    .color-1071-gray{
+        color: #828282;
     }
 }
 @media (min-width: 992px) {
@@ -1200,6 +1242,9 @@ input[type=number].error:focus {
     #pagination a{
         background-color: #2F2B3D14 !important;
         color: #323232;
+    }
+    #pagination a svg path{
+        stroke: #2F2B3DE5;
     }
     .w-md-100 {
         width: 100%;
@@ -1286,6 +1331,9 @@ input[type=number].error:focus {
     }
     .border-sm-gray{
         border: 1px solid #EDEDED;
+    }
+    .fs-sm-10{
+        font-size: 10px;
     }
 }
 
