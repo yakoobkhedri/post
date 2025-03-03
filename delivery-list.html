@@ -189,8 +189,13 @@
             </div>
           </div>
         </div>
-        <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-between gap-sm-3 gap-2 mt-4">
-          <h5 class="fs-18 fs-sm-16 fw-bold">لیست مرسولات آماده تحویل</h5>
+        <div class="d-flex align-items-center justify-content-between gap-sm-3 gap-2 my-3">
+          <h5 class="fs-18 fs-sm-16 fw-bold mb-0"><span class="d-1071-hidden">لیست</span> مرسولات <span class="d-1071-hidden">آماده تحویل</span></h5>
+          <a class="d-1071-none">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 19L16 12L9 5" stroke="#545F71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </a>
         </div>
         <div class="d-md-none bg-white rounded-t-8 px-2 py-3 mt-2">
           <div class="rounded-8 border-gray px-2 d-flex align-items-center h-40 gap-2 bg-gray5">
@@ -203,34 +208,44 @@
             <input placeholder="جستجــو" class="outline-none bg-gray5 w-100 flex-grow-1 h-100 fs-14 fw-bold border-0">
           </div>
         </div>
-        <div class="mt-md-3 mt-2 rounded-25 rounded-md-0 overflow-hidden py-3 px-4 p-md-0px bg-white">
-          <div class="fs-sm-12 table-responsive">
+        <div class="d-md-none bg-white rounded-10 px-4 py-3 mt-3">
+         <div class="d-flex align-items-center gap-3 fs-14 mb-3">
+           <p class="text-main fw-bold mb-0">نوع دفتر</p>
+           <p class="text-dark2 fw-Medium mb-0">دریافت</p>
+         </div>
+         <div class="d-flex align-items-center gap-3 fs-14">
+           <p class="text-main fw-bold mb-0">نام دفتر</p>
+           <p class="text-dark2 fw-Medium mb-0">شمال شرقی یکم - کوهسار</p>
+         </div>
+        </div>
+        <div class="mt-3 rounded-25 rounded-md-0 overflow-hidden py-3 px-3 p-md-0px bg-white bg-md-transparent">
+          <div class="fs-sm-12 fs-14 table-responsive">
             <div>
-              <div class="row mx-0 fw-bold rounded-12 rounded-md-0 text-purple bg-yellow bg-md-yellow text-center">
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 px-0">ردیف</div>
-                <div class="d-flex align-items-center justify-content-center col-3 py-2 px-0 d-md-none">نام دفتر</div>
-                <div class="align-items-center justify-content-center col-2 py-2 px-0 text-end d-none d-md-flex">راننده</div>
-                <div class="align-items-center justify-content-center col-2 py-2 px-0 text-end d-none d-md-flex">ماشین</div>
-                <div class="d-flex align-items-center justify-content-center col-md-2 col-3 py-2 px-0">تعداد مرسوله</div>
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 px-0">تعداد کیسه</div>
-                <div class="align-items-center justify-content-center col-1 py-2 px-0 d-none d-md-flex">ارسال به</div>
-                <div class="align-items-center justify-content-center col-2 py-2 px-0 d-none d-md-flex">تحویل دهنده</div>
-                <div class="align-items-center justify-content-center col-1 py-2 px-0 d-none d-md-flex">عملیات</div>
+              <div class="row d-none d-md-flex mx-0 fw-bold rounded-12 rounded-md-0 text-purple bg-yellow bg-md-yellow text-center">
+                <div class="d-flex align-items-center justify-content-center col-1 py-2 px-0">ردیف</div>
+                <div class="d-flex align-items-center text-end col-2 py-2 px-0">شماره کیسه</div>
+                <div class="align-items-center justify-content-center col-1 py-2 px-0 text-end d-flex">نوع کیسه</div>
+                <div class="d-flex align-items-center justify-content-center col-1 py-2 px-0">تعداد مرسوله</div>
+                <div class="d-flex align-items-center justify-content-center col-2 py-2 px-0">تعداد کیسه</div>
+                <div class="align-items-center justify-content-center col-1 py-2 px-0 d-flex">ارسال به</div>
+                <div class="align-items-center justify-content-center col-2 py-2 px-0 text-end d-flex">راننده</div>
+                <div class="align-items-center justify-content-center col-1 py-2 px-0 d-flex">وضعیت</div>
+                <div class="align-items-center justify-content-center col-1 py-2 px-0 d-flex">عملیات</div>
               </div>
-              <div class="row mx-0 text-dark2 text-center border-b-gray">
+              <div class="row mx-0 text-dark2 bg-white rounded-md-10 text-center border-b-gray">
                 <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 py-md-3 px-0 position-relative">
                   <div class="w-20 h-20 d-none d-lg-block top-18 right-4 border-black-2 position-absolute rounded-circle"></div>
                   <!-- <input name="report" type="radio" class="w-20 h-20 top-15 right-4 border-black-2 position-absolute form-check-input rounded-circle"> -->
                   1
                 </div>
-                <div class="d-flex align-items-center justify-content-center col-3 py-2 py-md-3 px-0 d-md-none">تهران</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 text-end d-none d-md-flex">محمد زندی</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 text-end d-none d-md-flex">۱۱ ب ۸۵۶ - ۷۷</div>
-                <div class="d-flex align-items-center justify-content-center col-md-2 col-3 py-2 py-md-3 px-0">۴۳۲</div>
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 py-md-3 px-0">۲۳</div>
-                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-none d-md-flex">مرکزی</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 d-none d-md-flex">رضا امیدی</div>
-                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-none d-md-flex">
+                <div class="d-flex align-items-center text-end col-2 py-2 py-md-3 px-0">۱۲۳۴۵۶۷۸۹۱۲۳۴۵۶۷۸۹۰۱۰۱</div>
+                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 text-end d-flex">پیشتاز</div>
+                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 text-end d-flex">۴۳۲</div>
+                <div class="d-flex align-items-center justify-content-center col-2 py-2 py-md-3 px-0">۲۳</div>
+                <div class="d-flex align-items-center justify-content-center col-1 py-2 py-md-3 px-0">مرکزی</div>
+                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 d-flex">علی افشارپناه</div>
+                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-flex">در انتظار تایید</div>
+                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-flex">
                   <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9.1665 1.66663H7.49984C3.33317 1.66663 1.6665 3.33329 1.6665 7.49996V12.5C1.6665 16.6666 3.33317 18.3333 7.49984 18.3333H12.4998C16.6665 18.3333 18.3332 16.6666 18.3332 12.5V10.8333" stroke="#164194" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M13.3666 2.51663L6.7999 9.0833C6.5499 9.3333 6.2999 9.82497 6.2499 10.1833L5.89157 12.6916C5.75823 13.6 6.3999 14.2333 7.30823 14.1083L9.81657 13.75C10.1666 13.7 10.6582 13.45 10.9166 13.2L17.4832 6.6333C18.6166 5.49997 19.1499 4.1833 17.4832 2.51663C15.8166 0.849966 14.4999 1.3833 13.3666 2.51663Z" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -238,165 +253,6 @@
                     </svg>
                 </div>
               </div>
-              <div class="row mx-0 text-dark2 text-center border-b-gray">
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 py-md-3 px-0 position-relative">
-                  <div class="w-20 h-20 d-none d-lg-block top-18 right-4 border-black-2 position-absolute rounded-circle"></div>
-                  <!-- <input name="report" type="radio" class="w-20 h-20 top-15 right-4 border-black-2 position-absolute form-check-input rounded-circle"> -->
-                  2
-                </div>
-                <div class="d-flex align-items-center justify-content-center col-3 py-2 py-md-3 px-0 d-md-none">تهران</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 text-end d-none d-md-flex">محمد زندی</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 text-end d-none d-md-flex">۱۱ ب ۸۵۶ - ۷۷</div>
-                <div class="d-flex align-items-center justify-content-center col-md-2 col-3 py-2 py-md-3 px-0">۴۳۲</div>
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 py-md-3 px-0">۲۳</div>
-                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-none d-md-flex">مرکزی</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 d-none d-md-flex">رضا امیدی</div>
-                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-none d-md-flex">
-                  <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.1665 1.66663H7.49984C3.33317 1.66663 1.6665 3.33329 1.6665 7.49996V12.5C1.6665 16.6666 3.33317 18.3333 7.49984 18.3333H12.4998C16.6665 18.3333 18.3332 16.6666 18.3332 12.5V10.8333" stroke="#164194" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M13.3666 2.51663L6.7999 9.0833C6.5499 9.3333 6.2999 9.82497 6.2499 10.1833L5.89157 12.6916C5.75823 13.6 6.3999 14.2333 7.30823 14.1083L9.81657 13.75C10.1666 13.7 10.6582 13.45 10.9166 13.2L17.4832 6.6333C18.6166 5.49997 19.1499 4.1833 17.4832 2.51663C15.8166 0.849966 14.4999 1.3833 13.3666 2.51663Z" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12.4248 3.45837C12.9831 5.45004 14.5415 7.00837 16.5415 7.57504" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-              </div>
-              <div class="row mx-0 text-dark2 text-center border-b-gray">
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 py-md-3 px-0 position-relative">
-                  <div class="w-20 h-20 d-none d-lg-block top-18 right-4 border-black-2 position-absolute rounded-circle"></div>
-                  <!-- <input name="report" type="radio" class="w-20 h-20 top-15 right-4 border-black-2 position-absolute form-check-input rounded-circle"> -->
-                  3
-                </div>
-                <div class="d-flex align-items-center justify-content-center col-3 py-2 py-md-3 px-0 d-md-none">تهران</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 text-end d-none d-md-flex">محمد زندی</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 text-end d-none d-md-flex">۱۱ ب ۸۵۶ - ۷۷</div>
-                <div class="d-flex align-items-center justify-content-center col-md-2 col-3 py-2 py-md-3 px-0">۴۳۲</div>
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 py-md-3 px-0">۲۳</div>
-                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-none d-md-flex">مرکزی</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 d-none d-md-flex">رضا امیدی</div>
-                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-none d-md-flex">
-                  <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.1665 1.66663H7.49984C3.33317 1.66663 1.6665 3.33329 1.6665 7.49996V12.5C1.6665 16.6666 3.33317 18.3333 7.49984 18.3333H12.4998C16.6665 18.3333 18.3332 16.6666 18.3332 12.5V10.8333" stroke="#164194" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M13.3666 2.51663L6.7999 9.0833C6.5499 9.3333 6.2999 9.82497 6.2499 10.1833L5.89157 12.6916C5.75823 13.6 6.3999 14.2333 7.30823 14.1083L9.81657 13.75C10.1666 13.7 10.6582 13.45 10.9166 13.2L17.4832 6.6333C18.6166 5.49997 19.1499 4.1833 17.4832 2.51663C15.8166 0.849966 14.4999 1.3833 13.3666 2.51663Z" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12.4248 3.45837C12.9831 5.45004 14.5415 7.00837 16.5415 7.57504" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-              </div>
-              <div class="row mx-0 text-dark2 text-center border-b-gray">
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 py-md-3 px-0 position-relative">
-                  <div class="w-20 h-20 d-none d-lg-block top-18 right-4 border-black-2 position-absolute rounded-circle"></div>
-                  <!-- <input name="report" type="radio" class="w-20 h-20 top-15 right-4 border-black-2 position-absolute form-check-input rounded-circle"> -->
-                  4
-                </div>
-                <div class="d-flex align-items-center justify-content-center col-3 py-2 py-md-3 px-0 d-md-none">تهران</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 text-end d-none d-md-flex">محمد زندی</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 text-end d-none d-md-flex">۱۱ ب ۸۵۶ - ۷۷</div>
-                <div class="d-flex align-items-center justify-content-center col-md-2 col-3 py-2 py-md-3 px-0">۴۳۲</div>
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 py-md-3 px-0">۲۳</div>
-                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-none d-md-flex">مرکزی</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 d-none d-md-flex">رضا امیدی</div>
-                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-none d-md-flex">
-                  <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.1665 1.66663H7.49984C3.33317 1.66663 1.6665 3.33329 1.6665 7.49996V12.5C1.6665 16.6666 3.33317 18.3333 7.49984 18.3333H12.4998C16.6665 18.3333 18.3332 16.6666 18.3332 12.5V10.8333" stroke="#164194" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M13.3666 2.51663L6.7999 9.0833C6.5499 9.3333 6.2999 9.82497 6.2499 10.1833L5.89157 12.6916C5.75823 13.6 6.3999 14.2333 7.30823 14.1083L9.81657 13.75C10.1666 13.7 10.6582 13.45 10.9166 13.2L17.4832 6.6333C18.6166 5.49997 19.1499 4.1833 17.4832 2.51663C15.8166 0.849966 14.4999 1.3833 13.3666 2.51663Z" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12.4248 3.45837C12.9831 5.45004 14.5415 7.00837 16.5415 7.57504" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-              </div>
-              <div class="row mx-0 text-dark2 text-center border-b-gray">
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 py-md-3 px-0 position-relative">
-                  <div class="w-20 h-20 d-none d-lg-block top-18 right-4 border-black-2 position-absolute rounded-circle"></div>
-                  <!-- <input name="report" type="radio" class="w-20 h-20 top-15 right-4 border-black-2 position-absolute form-check-input rounded-circle"> -->
-                  5
-                </div>
-                <div class="d-flex align-items-center justify-content-center col-3 py-2 py-md-3 px-0 d-md-none">تهران</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 text-end d-none d-md-flex">محمد زندی</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 text-end d-none d-md-flex">۱۱ ب ۸۵۶ - ۷۷</div>
-                <div class="d-flex align-items-center justify-content-center col-md-2 col-3 py-2 py-md-3 px-0">۴۳۲</div>
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 py-md-3 px-0">۲۳</div>
-                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-none d-md-flex">مرکزی</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 d-none d-md-flex">رضا امیدی</div>
-                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-none d-md-flex">
-                  <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.1665 1.66663H7.49984C3.33317 1.66663 1.6665 3.33329 1.6665 7.49996V12.5C1.6665 16.6666 3.33317 18.3333 7.49984 18.3333H12.4998C16.6665 18.3333 18.3332 16.6666 18.3332 12.5V10.8333" stroke="#164194" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M13.3666 2.51663L6.7999 9.0833C6.5499 9.3333 6.2999 9.82497 6.2499 10.1833L5.89157 12.6916C5.75823 13.6 6.3999 14.2333 7.30823 14.1083L9.81657 13.75C10.1666 13.7 10.6582 13.45 10.9166 13.2L17.4832 6.6333C18.6166 5.49997 19.1499 4.1833 17.4832 2.51663C15.8166 0.849966 14.4999 1.3833 13.3666 2.51663Z" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12.4248 3.45837C12.9831 5.45004 14.5415 7.00837 16.5415 7.57504" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-              </div>
-              <div class="row mx-0 text-dark2 text-center border-b-gray">
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 py-md-3 px-0 position-relative">
-                  <div class="w-20 h-20 d-none d-lg-block top-18 right-4 border-black-2 position-absolute rounded-circle"></div>
-                  <!-- <input name="report" type="radio" class="w-20 h-20 top-15 right-4 border-black-2 position-absolute form-check-input rounded-circle"> -->
-                  6
-                </div>
-                <div class="d-flex align-items-center justify-content-center col-3 py-2 py-md-3 px-0 d-md-none">تهران</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 text-end d-none d-md-flex">محمد زندی</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 text-end d-none d-md-flex">۱۱ ب ۸۵۶ - ۷۷</div>
-                <div class="d-flex align-items-center justify-content-center col-md-2 col-3 py-2 py-md-3 px-0">۴۳۲</div>
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 py-md-3 px-0">۲۳</div>
-                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-none d-md-flex">مرکزی</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 d-none d-md-flex">رضا امیدی</div>
-                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-none d-md-flex">
-                  <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.1665 1.66663H7.49984C3.33317 1.66663 1.6665 3.33329 1.6665 7.49996V12.5C1.6665 16.6666 3.33317 18.3333 7.49984 18.3333H12.4998C16.6665 18.3333 18.3332 16.6666 18.3332 12.5V10.8333" stroke="#164194" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M13.3666 2.51663L6.7999 9.0833C6.5499 9.3333 6.2999 9.82497 6.2499 10.1833L5.89157 12.6916C5.75823 13.6 6.3999 14.2333 7.30823 14.1083L9.81657 13.75C10.1666 13.7 10.6582 13.45 10.9166 13.2L17.4832 6.6333C18.6166 5.49997 19.1499 4.1833 17.4832 2.51663C15.8166 0.849966 14.4999 1.3833 13.3666 2.51663Z" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12.4248 3.45837C12.9831 5.45004 14.5415 7.00837 16.5415 7.57504" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-              </div>
-              <div class="row mx-0 text-dark2 text-center border-b-gray">
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 py-md-3 px-0 position-relative">
-                  <div class="w-20 h-20 d-none d-lg-block top-18 right-4 border-black-2 position-absolute rounded-circle"></div>
-                  <!-- <input name="report" type="radio" class="w-20 h-20 top-15 right-4 border-black-2 position-absolute form-check-input rounded-circle"> -->
-                  7
-                </div>
-                <div class="d-flex align-items-center justify-content-center col-3 py-2 py-md-3 px-0 d-md-none">تهران</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 text-end d-none d-md-flex">محمد زندی</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 text-end d-none d-md-flex">۱۱ ب ۸۵۶ - ۷۷</div>
-                <div class="d-flex align-items-center justify-content-center col-md-2 col-3 py-2 py-md-3 px-0">۴۳۲</div>
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 py-md-3 px-0">۲۳</div>
-                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-none d-md-flex">مرکزی</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 d-none d-md-flex">رضا امیدی</div>
-                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-none d-md-flex">
-                  <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.1665 1.66663H7.49984C3.33317 1.66663 1.6665 3.33329 1.6665 7.49996V12.5C1.6665 16.6666 3.33317 18.3333 7.49984 18.3333H12.4998C16.6665 18.3333 18.3332 16.6666 18.3332 12.5V10.8333" stroke="#164194" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M13.3666 2.51663L6.7999 9.0833C6.5499 9.3333 6.2999 9.82497 6.2499 10.1833L5.89157 12.6916C5.75823 13.6 6.3999 14.2333 7.30823 14.1083L9.81657 13.75C10.1666 13.7 10.6582 13.45 10.9166 13.2L17.4832 6.6333C18.6166 5.49997 19.1499 4.1833 17.4832 2.51663C15.8166 0.849966 14.4999 1.3833 13.3666 2.51663Z" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12.4248 3.45837C12.9831 5.45004 14.5415 7.00837 16.5415 7.57504" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-              </div>
-              <div class="row mx-0 text-dark2 text-center border-b-gray">
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 py-md-3 px-0 position-relative">
-                  <div class="w-20 h-20 d-none d-lg-block top-18 right-4 border-black-2 position-absolute rounded-circle"></div>
-                  <!-- <input name="report" type="radio" class="w-20 h-20 top-15 right-4 border-black-2 position-absolute form-check-input rounded-circle"> -->
-                  8
-                </div>
-                <div class="d-flex align-items-center justify-content-center col-3 py-2 py-md-3 px-0 d-md-none">تهران</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 text-end d-none d-md-flex">محمد زندی</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 text-end d-none d-md-flex">۱۱ ب ۸۵۶ - ۷۷</div>
-                <div class="d-flex align-items-center justify-content-center col-md-2 col-3 py-2 py-md-3 px-0">۴۳۲</div>
-                <div class="d-flex align-items-center justify-content-center col-md-1 col-3 py-2 py-md-3 px-0">۲۳</div>
-                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-none d-md-flex">مرکزی</div>
-                <div class="align-items-center justify-content-center col-2 py-2 py-md-3 px-0 d-none d-md-flex">رضا امیدی</div>
-                <div class="align-items-center justify-content-center col-1 py-2 py-md-3 px-0 d-none d-md-flex">
-                  <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.1665 1.66663H7.49984C3.33317 1.66663 1.6665 3.33329 1.6665 7.49996V12.5C1.6665 16.6666 3.33317 18.3333 7.49984 18.3333H12.4998C16.6665 18.3333 18.3332 16.6666 18.3332 12.5V10.8333" stroke="#164194" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M13.3666 2.51663L6.7999 9.0833C6.5499 9.3333 6.2999 9.82497 6.2499 10.1833L5.89157 12.6916C5.75823 13.6 6.3999 14.2333 7.30823 14.1083L9.81657 13.75C10.1666 13.7 10.6582 13.45 10.9166 13.2L17.4832 6.6333C18.6166 5.49997 19.1499 4.1833 17.4832 2.51663C15.8166 0.849966 14.4999 1.3833 13.3666 2.51663Z" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12.4248 3.45837C12.9831 5.45004 14.5415 7.00837 16.5415 7.57504" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="d-none d-md-block">
-            <div class="row mx-0 text-dark2 text-center fs-20 fw-bold">
-              <div class="col-1 py-4 px-0"></div>
-              <div class="col-2 py-4 px-0 text-end">مجموع</div>
-              <div class="col-2 py-4 px-0 text-end"></div>
-              <div class="col-2 py-4 px-0">۸۴۶۰</div>
-              <div class="col-1 py-4 px-0">۱۱۲۳۰</div>
-              <div class="col-1 py-4 px-0"></div>
-              <div class="col-2 py-4 px-0"></div>
-              <div class="col-1 py-4 px-0"></div>
             </div>
           </div>
         </div>

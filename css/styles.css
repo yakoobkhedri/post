@@ -1448,11 +1448,15 @@ input[type=number].error:focus {
     .rounded-md-0 {
         border-radius: 0px;
     }
-
+    .rounded-md-10 {
+        border-radius: 10px;
+    }
     .bg-md-yellow {
         background-color: #FFD500;
     }
-
+    .bg-md-transparent{
+        background-color: transparent !important;
+    }
     .max-w-md-100 {
         max-width: 100%;
     }
