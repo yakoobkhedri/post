@@ -403,7 +403,9 @@ footer p,
 .w-51 {
     width: 51px !important;
 }
-
+.w-52 {
+    width: 52px !important;
+}
 .w-64 {
     width: 64px !important;
 }
@@ -1211,7 +1213,9 @@ input[type=search]:focus {
 input[type=number].error:focus {
     border: 1px solid #B42318 !important;
 }
-
+.eye.active path{
+  stroke: #164194;
+}
 /*  input validate */
 .firstSuccess,
 .lastSuccess,
@@ -1459,6 +1463,22 @@ input[type=number].error:focus {
     }
     .max-w-md-100 {
         max-width: 100%;
+    }
+    .radif{
+        position: absolute !important;
+      background: #164194;
+      color: white;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 33px;
+      font-weight: bold;
+    }
+    .pr-md-47{
+        padding-right: 47px !important;
+    }
+    .border-b-md-0{
+        border-bottom: 0;
     }
 }
 
