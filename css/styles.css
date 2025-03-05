@@ -716,7 +716,25 @@ footer p,
 .text-gray3 {
     color: #828282;
 }
-
+.check{
+    position: relative;
+}
+.check.active{
+    background-color: #FCB600;
+}
+.check.active::after{
+    content: url('../images/Path.png');
+    position: absolute;
+    inset: 0;
+      top: 0px;
+      right: 0px;
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    right: 3px;
+    top: 4px;
+}
 /* disabled */
 .button[disabled],
 .button[disabled]:hover {
@@ -1569,6 +1587,19 @@ input[type=number].error:focus {
 
     .fs-sm-10 {
         font-size: 10px;
+    }
+    .check.active::after{
+        content: url('../images/Path.png');
+        position: absolute;
+        inset: 0;
+          top: 0px;
+          right: 0px;
+        margin: auto;
+        display: block;
+        width: 100%;
+        height: 100%;
+        right: 3px;
+        top: 6px;
     }
 }
 
