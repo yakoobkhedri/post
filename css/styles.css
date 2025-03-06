@@ -268,7 +268,10 @@ footer p,
     max-width: 280px;
     width: 100%;
 }
-
+.max-w-344 {
+    max-width: 344px;
+    width: 100%;
+}
 .max-w-358 {
     max-width: 358px;
     width: 100%;
@@ -278,7 +281,10 @@ footer p,
     max-width: 400px;
     width: 100%;
 }
-
+.max-w-471 {
+    max-width: 471px;
+    width: 100%;
+}
 .max-w-480 {
     max-width: 480px;
     width: 100%;
@@ -293,7 +299,14 @@ footer p,
     max-width: 512px;
     width: 100%;
 }
-
+.max-w-543 {
+    max-width: 543px;
+    width: 100%;
+}
+.max-w-684 {
+    max-width: 684px;
+    width: 100%;
+}
 .max-w-720 {
     max-width: 720px;
     width: 100%;
@@ -403,9 +416,11 @@ footer p,
 .w-51 {
     width: 51px !important;
 }
+
 .w-52 {
     width: 52px !important;
 }
+
 .w-64 {
     width: 64px !important;
 }
@@ -684,7 +699,12 @@ footer p,
 .text-yellow {
     color: #FFD500;
 }
-
+.text-success{
+    color: #46A808 !important;
+}
+.text-danger{
+    color: #AC0D6C80 !important;
+}
 .text-purple {
     color: #593E98;
 }
@@ -716,18 +736,25 @@ footer p,
 .text-gray3 {
     color: #828282;
 }
-.check{
+
+.check {
     position: relative;
 }
-.check.active{
+
+.check.active {
     background-color: #FCB600;
 }
-.check.active::after{
+
+.check.unactive {
+    background-color: red;
+}
+
+.check.active::after {
     content: url('../images/Path.png');
     position: absolute;
     inset: 0;
-      top: 0px;
-      right: 0px;
+    top: 0px;
+    right: 0px;
     margin: auto;
     display: block;
     width: 100%;
@@ -735,6 +762,21 @@ footer p,
     right: 3px;
     top: 4px;
 }
+
+.check.unactive::after {
+    content: url('../images/icons8-close-16.png');
+    position: absolute;
+    inset: 0;
+    top: 0px;
+    right: 0px;
+    margin: auto;
+    display: block;
+    width: 96%;
+    height: 96%;
+    right: 3px;
+    top: 4px;
+}
+
 /* disabled */
 .button[disabled],
 .button[disabled]:hover {
@@ -892,6 +934,9 @@ input:focus {
 }
 
 /* border */
+.border-main{
+    border: 1px solid #164194;
+}
 .border-b-gray {
     border-bottom: 1px solid #EDEDED;
 }
@@ -903,7 +948,9 @@ input:focus {
 .border-black-2 {
     border: 2px solid black;
 }
-
+.border-t-main{
+    border-top: 1px solid #164194;
+}
 /* after */
 .afterLine {
     position: relative;
@@ -1001,7 +1048,9 @@ input:focus {
 .rounded-32 {
     border-radius: 32px;
 }
-
+.rounded-35 {
+    border-radius: 35px;
+}
 /* input */
 input::placeholder {
     color: #475467;
@@ -1231,9 +1280,11 @@ input[type=search]:focus {
 input[type=number].error:focus {
     border: 1px solid #B42318 !important;
 }
-.eye.active path{
-  stroke: #164194;
+
+.eye.active path {
+    stroke: #164194;
 }
+
 /*  input validate */
 .firstSuccess,
 .lastSuccess,
@@ -1338,15 +1389,25 @@ input[type=number].error:focus {
     #pannelList li>div:first-child.active {
         background-color: transparent;
     }
-    #pannelList li > a:hover p, #pannelList li > a.active p,#pannelList li > div:hover p, #pannelList li > div.active p{
-      color: #164194 !important;
+
+    #pannelList li>a:hover p,
+    #pannelList li>a.active p,
+    #pannelList li>div:hover p,
+    #pannelList li>div.active p {
+        color: #164194 !important;
     }
-    #pannelList li > a:hover svg path, #pannelList li > a.active svg path,#pannelList li > div:hover svg path, #pannelList li > div.active svg path{
+
+    #pannelList li>a:hover svg path,
+    #pannelList li>a.active svg path,
+    #pannelList li>div:hover svg path,
+    #pannelList li>div.active svg path {
         stroke: #FFD500 !important;
-      }
+    }
+
     .gap-1071-2 {
         gap: 0.7rem !important;
-      }
+    }
+
     .d-1071-none {
         display: block !important;
     }
@@ -1470,32 +1531,39 @@ input[type=number].error:focus {
     .rounded-md-0 {
         border-radius: 0px;
     }
+
     .rounded-md-10 {
         border-radius: 10px;
     }
+
     .bg-md-yellow {
         background-color: #FFD500;
     }
-    .bg-md-transparent{
+
+    .bg-md-transparent {
         background-color: transparent !important;
     }
+
     .max-w-md-100 {
         max-width: 100%;
     }
-    .radif{
+
+    .radif {
         position: absolute !important;
-      background: #164194;
-      color: white;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      width: 33px;
-      font-weight: bold;
+        background: #164194;
+        color: white;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 33px;
+        font-weight: bold;
     }
-    .pr-md-47{
+
+    .pr-md-47 {
         padding-right: 47px !important;
     }
-    .border-b-md-0{
+
+    .border-b-md-0 {
         border-bottom: 0;
     }
 }
@@ -1588,12 +1656,13 @@ input[type=number].error:focus {
     .fs-sm-10 {
         font-size: 10px;
     }
-    .check.active::after{
+
+    .check.active::after {
         content: url('../images/Path.png');
         position: absolute;
         inset: 0;
-          top: 0px;
-          right: 0px;
+        top: 0px;
+        right: 0px;
         margin: auto;
         display: block;
         width: 100%;
