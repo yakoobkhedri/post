@@ -685,7 +685,9 @@ footer p,
     align-items: center;
     justify-content: center;
 }
-
+.modal {
+ padding: 12px;
+}
 /* text align */
 .text-justify {
     text-align: justify;
@@ -1631,6 +1633,9 @@ input[type=number].error:focus {
 
     .rounded-sm-10 {
         border-radius: 10px;
+    }
+    .rounded-sm-16 {
+        border-radius: 16px;
     }
 
     .bg-sm-white {
