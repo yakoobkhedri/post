@@ -690,7 +690,8 @@ footer p,
     justify-content: center;
 }
 .modal {
- padding: 12px;
+ padding: 12px !important;
+
 }
 /* text align */
 .text-justify {
@@ -974,10 +975,13 @@ input:focus {
 }
 
 .form-check-input:checked {
-    background-color: #583d98;
-    border-color: #583d98;
+    background-color: #46A808;
+    border-color: #46A808;
 }
-
+.form-switch .form-check-input{
+    width: 40px;
+    height: 22px;
+}
 /* background */
 .bg-main {
     background-color: #164194;
