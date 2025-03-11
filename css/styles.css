@@ -420,7 +420,9 @@ footer p,
 .w-52 {
     width: 52px !important;
 }
-
+.w-55 {
+    width: 55px !important;
+}
 .w-64 {
     width: 64px !important;
 }
@@ -990,7 +992,9 @@ input:focus {
 .bg-yellow {
     background-color: #FFD50066;
 }
-
+.bg-yellow2{
+    background-color: #FFD500 !important;
+}
 .bg-gray {
     background-color: #F5F7FA;
 }
@@ -1547,9 +1551,11 @@ input[type=number].error:focus {
     }
 
     .bg-md-yellow {
-        background-color: #FFD500;
+        background-color: #FFD500 !important;
     }
-
+.text-md-main{
+    color: #164194 !important;
+}
     .bg-md-transparent {
         background-color: transparent !important;
     }

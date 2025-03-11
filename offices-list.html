@@ -196,7 +196,7 @@
           </a>
         </li>
         <li class="py-1 d-1071-none d-none">
-          <a class="d-flex align-items-center flex-1071-col gap-3 gap-1071-2 fs-14 fw-bold  text-gray6 p-1071-0 p-10 pe-4 pe-1071-0 rounded-8">
+          <a class="active d-flex align-items-center flex-1071-col gap-3 gap-1071-2 fs-14 fw-bold  text-gray6 p-1071-0 p-10 pe-4 pe-1071-0 rounded-8">
             <svg class="d-1071-hidden" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.8301 7.20508L12.3794 15.7367" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M12.3794 15.709V15.8512" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -220,7 +220,7 @@
           </a>
         </li>
         <li class="py-1 d-1071-hidden">
-          <a class="active d-flex align-items-center flex-1071-col gap-3 gap-1071-2 fs-14 fw-bold  text-gray6 p-1071-0 p-10 pe-4 pe-1071-0 rounded-8">
+          <a class="d-flex align-items-center flex-1071-col gap-3 gap-1071-2 fs-14 fw-bold  text-gray6 p-1071-0 p-10 pe-4 pe-1071-0 rounded-8">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.423 8.72924C14.423 8.1982 13.9925 7.7677 13.4615 7.7677H5.76916C5.23812 7.7677 4.80762 8.1982 4.80762 8.72924C4.80762 9.26033 5.23812 9.69084 5.76916 9.69084H13.4615C13.9925 9.69084 14.423 9.26033 14.423 8.72924Z" fill="black"/>
               <path d="M13.141 12.5745C13.141 12.0433 12.7104 11.6129 12.1794 11.6129H5.76916C5.23812 11.6129 4.80762 12.0433 4.80762 12.5745C4.80762 13.1055 5.23812 13.536 5.76916 13.536H12.1794C12.7104 13.536 13.141 13.1055 13.141 12.5745Z" fill="black"/>
@@ -367,57 +367,42 @@
             <input placeholder="جستجــو" class="outline-none bg-gray5 w-100 flex-grow-1 h-100 fs-14 fw-bold border-0">
           </div>
         </div>
-        <div class="d-md-none bg-white rounded-10 px-4 py-3 mt-3">
-         <div class="d-flex align-items-center gap-3 fs-14 mb-3">
-           <p class="text-main fw-bold mb-0">نوع دفتر</p>
-           <p class="text-dark2 fw-Medium mb-0">دریافت</p>
-         </div>
-         <div class="d-flex align-items-center gap-3 fs-14">
-           <p class="text-main fw-bold mb-0">نام دفتر</p>
-           <p class="text-dark2 fw-Medium mb-0">شمال شرقی یکم - کوهسار</p>
-         </div>
-        </div>
         <div class="mt-2 rounded-25 rounded-md-0 overflow-hidden py-3 px-3 p-md-0px bg-white bg-md-transparent">
           <div class="fs-sm-12 fs-14 table-responsive">
             <div>
               <div class="row d-none d-md-flex mx-0 fw-bold rounded-12 rounded-md-0 text-purple bg-yellow bg-md-yellow text-center">
                 <div class="d-flex align-items-center justify-content-center col-1 py-2 px-0">ردیف</div>
-                <div class="d-flex align-items-center text-end col-2 py-2 px-0">نام</div>
-                <div class="align-items-center justify-content-center col-2 py-2 px-0 text-end d-flex">نام خانوادگی</div>
-                <div class="d-flex align-items-center justify-content-center col-2 py-2 px-0">نوع قرارداد</div>
-                <div class="d-flex align-items-center justify-content-center col-2 py-2 px-0">شماره همراه</div>
+                <div class="d-flex align-items-center text-end col-1 py-2 px-0">نوع دفتر</div>
+                <div class="align-items-center justify-content-center col-2 py-2 px-0 text-end d-flex">نام دفتر</div>
+                <div class="d-flex align-items-center justify-content-center col-5 py-2 px-0">نشانی</div>
                 <div class="align-items-center justify-content-center col-1 py-2 px-0 d-flex">وضعیت</div>
                 <div class="align-items-center justify-content-center col-2 py-2 px-0 d-flex">عملیات</div>
               </div>
-              <div class="row mx-0 mb-2 mb-md-0 px-0 pr-md-47 text-dark2 bg-white p-3 py-2 rounded-md-10 text-center border-b-gray border-b-md-0 position-relative overflow-hidden">
-                <div class="radif d-flex align-items-center justify-content-center col-md-1 col-3 py-md-2 py-1 py-md-3 px-0 position-relative">
+              <div class="row mx-0 mb-2 mb-md-0 ps-2 px-md-0 pr-md-47 text-dark2 bg-white p-3 py-2 rounded-md-10 text-center border-b-gray border-b-md-0 position-relative overflow-hidden">
+                <div class="radif bg-md-yellow text-md-main d-flex align-items-center justify-content-center col-md-1 col-3 py-md-2 py-1 py-md-3 px-0 position-relative">
                   <div class="w-20 h-20 d-none d-lg-block top-18 right-4 border-black-2 position-absolute rounded-circle"></div>
                   <!-- <input name="report" type="radio" class="w-20 h-20 top-15 right-4 border-black-2 position-absolute form-check-input rounded-circle"> -->
                   1
                 </div>
-                <div class="d-flex d-md-none align-items-center justify-content-end gap-2 text-end col-md-2 py-md-2 py-1 py-md-3 px-3">
-                  <p class="fw-bold text-success d-md-none mb-0">فعال</p>
+                <div class="d-flex d-md-none align-items-center justify-content-end gap-2 text-end col-md-2 py-md-2 py-1 py-md-3 px-0">
+                  <p class="fw-bold text-success d-md-none mb-0">تایید شده</p>
                   <div class="w-24 h-24 rounded-8 border-black-2 check active">
 
                   </div>
                 </div>
-                <div class="d-flex align-items-center gap-2 gap-md-0 text-end col-md-2 py-md-2 py-1 py-md-3 px-0">
-                  <p class="fw-bold text-main d-md-none mb-0 w-84">نام</p>
-                  <p class="mb-0">محمدرضا </p>
+                <div class="d-flex align-items-center gap-2 gap-md-0 text-end col-md-1 py-md-2 py-1 py-md-3 px-0">
+                  <p class="fw-bold text-main d-md-none mb-0 w-55 flex-shrink-0">نوع دفتر</p>
+                  <p class="mb-0">دریافت </p>
                 </div>
                 <div class="align-items-center justify-content-md-center gap-2 gap-md-0 col-md-2 py-md-2 py-1 py-md-3 px-0 text-end d-flex">
-                  <p class="fw-bold text-main d-md-none mb-0 w-84"> نام خانوادگی</p>
-                  <p class="mb-0">افشارپناه</p>
+                  <p class="fw-bold text-main d-md-none mb-0 w-55 flex-shrink-0"> نام دفتر</p>
+                  <p class="mb-0">شمال شرقی یکم - کوهسار</p>
                 </div>
-                <div class="align-items-center justify-content-md-center gap-2 gap-md-0 col-md-2 py-md-2 py-1 py-md-3 px-0 text-end d-flex">
-                  <p class="fw-bold text-main d-md-none mb-0 w-84">نوع قرارداد</p>
-                  <p class="mb-0">شرکتی</p>
+                <div class="align-items-center justify-content-md-center gap-2 gap-md-0 col-md-5 py-md-2 py-1 py-md-3 px-0 text-end d-flex">
+                  <p class="fw-bold text-main d-md-none mb-0 w-55 flex-shrink-0">نشانی</p>
+                  <p class="mb-0">اقدسیه - خیابان آجودانیه - کوچه هشتم - شماره ۱۱</p>
                 </div>
-                <div class="d-flex align-items-center justify-content-md-center gap-2 gap-md-0 col-md-2 py-md-2 py-1 py-md-3 px-0 text-end">
-                  <p class="fw-bold text-main d-md-none mb-0 w-84">شماره همراه</p>
-                  <p class="mb-0">۰۹۱۰۶۵۴۸۷۹۰</p>
-                </div>
-                <div class="align-items-center justify-content-center col-1 py-md-2 py-1 py-md-3 px-0 d-md-flex d-none text-success">فعال</div>
+                <div class="align-items-center justify-content-center col-1 py-md-2 py-1 py-md-3 px-0 d-md-flex d-none text-success">تایید شده</div>
                 <div class="align-items-center justify-content-center gap-2 col-2 py-md-2 py-1 py-md-3 px-0 d-md-flex d-none">
                   <div data-bs-toggle="modal" data-bs-target="#confirmModal">
                     <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -432,49 +417,12 @@
                         </svg>
                     </div>
                 </div>
-              </div>
-              <div class="row mx-0 mb-2 mb-md-0 px-0 pr-md-47 text-dark2 bg-white p-3 py-2 rounded-md-10 text-center border-b-gray border-b-md-0 position-relative overflow-hidden">
-                <div class="radif d-flex align-items-center justify-content-center col-md-1 col-3 py-md-2 py-1 py-md-3 px-0 position-relative">
-                  <div class="w-20 h-20 d-none d-lg-block top-18 right-4 border-black-2 position-absolute rounded-circle"></div>
-                  <!-- <input name="report" type="radio" class="w-20 h-20 top-15 right-4 border-black-2 position-absolute form-check-input rounded-circle"> -->
-                  2
-                </div>
-                <div class="d-flex d-md-none align-items-center justify-content-end gap-2 text-end col-md-2 py-md-2 py-1 py-md-3 px-3">
-                  <p class="fw-bold text-danger d-md-none mb-0">غیر فعال</p>
-                  <div class="w-24 h-24 rounded-8 border-black-2 check unactive">
-
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2 gap-md-0 text-end col-md-2 py-md-2 py-1 py-md-3 px-0">
-                  <p class="fw-bold text-main d-md-none mb-0 w-84">نام</p>
-                  <p class="mb-0">محمدرضا </p>
-                </div>
-                <div class="align-items-center justify-content-md-center gap-2 gap-md-0 col-md-2 py-md-2 py-1 py-md-3 px-0 text-end d-flex">
-                  <p class="fw-bold text-main d-md-none mb-0 w-84"> نام خانوادگی</p>
-                  <p class="mb-0">افشارپناه</p>
-                </div>
-                <div class="align-items-center justify-content-md-center gap-2 gap-md-0 col-md-2 py-md-2 py-1 py-md-3 px-0 text-end d-flex">
-                  <p class="fw-bold text-main d-md-none mb-0 w-84">نوع قرارداد</p>
-                  <p class="mb-0">شرکتی</p>
-                </div>
-                <div class="d-flex align-items-center justify-content-md-center gap-2 gap-md-0 col-md-2 py-md-2 py-1 py-md-3 px-0 text-end">
-                  <p class="fw-bold text-main d-md-none mb-0 w-84">شماره همراه</p>
-                  <p class="mb-0">۰۹۱۰۶۵۴۸۷۹۰</p>
-                </div>
-                <div class="align-items-center justify-content-center col-1 py-md-2 py-1 py-md-3 px-0 d-md-flex d-none text-danger">غیر فعال</div>
-                <div class="align-items-center justify-content-center gap-2 col-2 py-md-2 py-1 py-md-3 px-0 d-md-flex d-none">
-                  <div data-bs-toggle="modal" data-bs-target="#confirmModal">
-                    <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9.1665 1.66663H7.49984C3.33317 1.66663 1.6665 3.33329 1.6665 7.49996V12.5C1.6665 16.6666 3.33317 18.3333 7.49984 18.3333H12.4998C16.6665 18.3333 18.3332 16.6666 18.3332 12.5V10.8333" stroke="#164194" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M13.3666 2.51663L6.7999 9.0833C6.5499 9.3333 6.2999 9.82497 6.2499 10.1833L5.89157 12.6916C5.75823 13.6 6.3999 14.2333 7.30823 14.1083L9.81657 13.75C10.1666 13.7 10.6582 13.45 10.9166 13.2L17.4832 6.6333C18.6166 5.49997 19.1499 4.1833 17.4832 2.51663C15.8166 0.849966 14.4999 1.3833 13.3666 2.51663Z" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M12.4248 3.45837C12.9831 5.45004 14.5415 7.00837 16.5415 7.57504" stroke="#164194" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </div>
-                    <div data-bs-toggle="modal" data-bs-target="#viewModal">
-                      <svg class="cursor-pointer eye" width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M25 9.5C25 9.5 20.6363 18 13 18C5.36363 18 1 9.5 1 9.5C1 9.5 5.36363 1 13 1C16.4535 1 19.2376 2.7384 21.2514 4.64286M9.4 9.5C9.4 11.512 11.0117 13.1429 13 13.1429C14.9883 13.1429 16.6 11.512 16.6 9.5C16.6 7.48805 14.9883 5.85714 13 5.85714" stroke="#CFD0D0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
+                <div data-bs-toggle="modal" data-bs-target="#viewModal" class="d-flex d-md-none align-items-center justify-content-end gap-1 cursor-pointer text-end col-md-2 py-md-2 py-1 py-md-3 px-0">
+                  <p class="fw-bold text-main d-md-none mb-0 fs-10">مشاهده کیسه‌ها</p>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.9998 12C14.9998 13.6569 13.6566 15 11.9998 15C10.3429 15 8.99976 13.6569 8.99976 12C8.99976 10.3431 10.3429 9 11.9998 9C13.6566 9 14.9998 10.3431 14.9998 12Z" stroke="#164194" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2.45801 12C3.73228 7.94288 7.52257 5 12.0002 5C16.4778 5 20.2681 7.94291 21.5424 12C20.2681 16.0571 16.4778 19 12.0002 19C7.52256 19 3.73226 16.0571 2.45801 12Z" stroke="#164194" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </div>
               </div>
             </div>
