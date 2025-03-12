@@ -17,4 +17,4 @@ function setupAccordion() {
 setupAccordion();
 
 // اجرای تابع در صورت تغییر اندازه صفحه
-window.addEventListener('resize', setupAccordion);
+// window.addEventListener('resize', setupAccordion);
