@@ -321,7 +321,9 @@ footer p,
     max-width: 1280px;
     width: 100%;
 }
-
+.min-w-168{
+    min-width: 168px;
+}
 /* font size */
 .fs-8 {
     font-size: 8px;
@@ -1164,7 +1166,12 @@ input::placeholder {
 .main-hover.active {
     color: #164194 !important;
 }
-
+.closehover path{
+  transition: all .4s;
+}
+.closehover:hover path{
+    stroke: red;
+}
 /* dashboard */
 #pannelList li a,
 #pannelList li p,
