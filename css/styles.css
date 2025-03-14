@@ -352,7 +352,9 @@ footer p,
 .fs-20 {
     font-size: 20px;
 }
-
+.fs-22 {
+    font-size: 22px;
+}
 .fs-24 {
     font-size: 24px;
 }
@@ -1066,6 +1068,10 @@ input:focus {
 }
 .rounded-35 {
     border-radius: 35px;
+}
+/* chart */
+.highcharts-credits{
+    display: none;
 }
 /* input */
 input::placeholder {
