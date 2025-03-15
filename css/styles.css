@@ -1070,8 +1070,16 @@ input:focus {
     border-radius: 35px;
 }
 /* chart */
-.highcharts-credits{
+.highcharts-credits,.highcharts-grid-line,.highcharts-axis-labels.highcharts-yaxis-labels,.highcharts-axis.highcharts-xaxis{
     display: none;
+}
+.highcharts-axis-labels.highcharts-xaxis-labels text,.highcharts-legend-item.highcharts-column-series.highcharts-color-undefined text{
+  fill: #718EBF !important;
+  font-size: 12px !important;
+}
+.highcharts-point{
+    width: 15px;
+    height: 15px;
 }
 /* input */
 input::placeholder {
