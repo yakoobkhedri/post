@@ -23,7 +23,7 @@ Highcharts.chart('container', {
             description: 'Countries'
         },
         min: 0, // شروع از اولین دسته
-        max: 10, // نمایش تنها ۵ دسته اول
+        max: 11, // نمایش تنها ۵ دسته اول
         scrollbar: {
             enabled: true // فعال‌سازی اسکرول
         }

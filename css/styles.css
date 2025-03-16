@@ -1518,6 +1518,9 @@ input[type=number].error:focus {
 }
 
 @media (max-width: 768px) {
+    .fs-md-12 {
+        font-size: 12px !important;
+    }
     .fs-md-14 {
         font-size: 14px !important;
     }
