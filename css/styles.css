@@ -348,7 +348,9 @@ footer p,
 .fs-14 {
     font-size: 14px;
 }
-
+.fs-16 {
+    font-size: 16px;
+}
 .fs-18 {
     font-size: 18px;
 }
@@ -775,7 +777,9 @@ footer p,
 .text-gray3 {
     color: #828282;
 }
-
+.text-gray4{
+    color: #9C9D9D;
+}
 .check {
     position: relative;
 }
@@ -1548,6 +1552,18 @@ input[type=number].error:focus {
 
     .h-lg-auto {
         height: auto;
+    }
+    .shadow-lg-none{
+        box-shadow: none;
+    }
+    .text-lg-black{
+        color: #000000;
+    }
+    .text-lg-main{
+        color: #164194;
+    }
+    .bg-lg-white{
+        background-color: white;
     }
 
 }
