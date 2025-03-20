@@ -466,7 +466,9 @@ footer p,
 .w-140 {
     width: 140px !important;
 }
-
+.w-144 {
+    width: 144px !important;
+}
 .w-158 {
     width: 158px !important;
 }
@@ -545,6 +547,9 @@ footer p,
 .h-31 {
     height: 31px;
 }
+.h-32 {
+    height: 32px;
+}
 .h-35 {
     height: 35px;
 }
@@ -577,6 +582,9 @@ footer p,
 
 .h-51 {
     height: 51px !important;
+}
+.h-52 {
+    height: 52px !important;
 }
 .h-57 {
     height: 57px !important;
@@ -761,7 +769,9 @@ footer p,
 .text-dark4 {
     color: #2F2B3D66;
 }
-
+.text-dark5{
+    color: #4F4F4F;
+}
 .text-black {
     color: black;
 }
@@ -987,7 +997,6 @@ input:focus {
 .border-gray {
     border: 1px solid #EDEDED;
 }
-
 .border-black-2 {
     border: 2px solid black;
 }
@@ -1025,6 +1034,9 @@ input:focus {
 .bg-main2{
     background-color: #1D51B1;
 }
+.bg-main3{
+    background-color: #14489D33;
+}
 .bg-yellow {
     background-color: #FFD50066;
 }
@@ -1050,7 +1062,9 @@ input:focus {
 .bg-gray5 {
     background-color: #FAFAFA;
 }
-
+.bg-gray6{
+    background-color: #F2F2F2;
+}
 /* box shadow */
 .shadow-1 {
     box-shadow: 0px 0px 15px 0px #0000001C;
@@ -1343,7 +1357,7 @@ input[type=number] {
 input[type=number]:focus,
 .otp-input:focus,
 .otp-input.fill {
-    border: 1px solid #2D31A6 !important;
+    border: 1px solid #14489D !important;
     box-shadow: none;
 }
 
