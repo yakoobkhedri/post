@@ -1229,6 +1229,9 @@ input::placeholder {
 }
 
 /* hover */
+.dark5hover:hover{
+    color: #4F4F4F;
+}
 .main-hover:hover,
 .main-hover.active {
     color: #164194 !important;
@@ -1372,7 +1375,10 @@ input[type=number].error:focus {
 .eye.active path {
     stroke: #164194;
 }
-
+.otp-input.active{
+    border: 1px solid #14489D;
+    background-color: white;
+}
 /*  input validate */
 .firstSuccess,
 .lastSuccess,

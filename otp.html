@@ -24,20 +24,20 @@
               <h4 class="text-center text-gray4 fs-16 fs-sm-14 fw-bold">کد تایید پیامک شد، آن را وارد کنید.</h4>
               <div class="mt-4">
                 <div dir="ltr" class="d-flex align-items-center justify-content-center gap-2">
-                  <input type="number" min="0" max="9" id="firstOtp" class="rounded-8 focus otp-input h-52 w-41 border-gray bg-gray5 text-center text-main fw-bold outline-none">
-                  <input type="number" min="0" max="9" class="rounded-8 focus otp-input h-52 w-41 border-gray bg-gray5 text-center text-main fw-bold outline-none" disabled="">
-                  <input type="number" min="0" max="9" class="rounded-8 focus otp-input h-52 w-41 border-gray bg-gray5 text-center text-main fw-bold outline-none" disabled="">
-                  <input type="number" min="0" max="9" class="rounded-8 focus otp-input h-52 w-41 border-gray bg-gray5 text-center text-main fw-bold outline-none" disabled="">
-                  <input type="number" min="0" max="9" class="rounded-8 focus otp-input h-52 w-41 border-gray bg-gray5 text-center text-main fw-bold outline-none" disabled="">
-                  <input type="number" min="0" max="9" class="rounded-8 focus otp-input h-52 w-41 border-gray bg-gray5 text-center text-main fw-bold outline-none" disabled="">
+                  <input type="number" data-index="0" maxlength="1" min="0" max="9" id="firstOtp" class="rounded-8 focus otp-input h-52 w-41 border-gray bg-gray5 text-center text-main fw-bold outline-none">
+                  <input type="number" data-index="1" maxlength="1" min="0" max="9" class="rounded-8 focus otp-input h-52 w-41 border-gray bg-gray5 text-center text-main fw-bold outline-none" disabled="">
+                  <input type="number" data-index="2" maxlength="1" min="0" max="9" class="rounded-8 focus otp-input h-52 w-41 border-gray bg-gray5 text-center text-main fw-bold outline-none" disabled="">
+                  <input type="number" data-index="3" maxlength="1" min="0" max="9" class="rounded-8 focus otp-input h-52 w-41 border-gray bg-gray5 text-center text-main fw-bold outline-none" disabled="">
+                  <input type="number" data-index="4" maxlength="1" min="0" max="9" class="rounded-8 focus otp-input h-52 w-41 border-gray bg-gray5 text-center text-main fw-bold outline-none" disabled="">
+                  <input type="number" data-index="5" maxlength="1" min="0" max="9" class="rounded-8 focus otp-input h-52 w-41 border-gray bg-gray5 text-center text-main fw-bold outline-none" disabled="">
                  </div>
               </div>
-              <div id="time" class="d-flex align-items-center bg-main3 border-0 h-48 justify-content-center rounded-8 text-main w-100 fw-Medium mt-4 px-2">
+              <button disabled id="timer" class="d-flex align-items-center bg-main3 border-0 h-48 justify-content-center rounded-8 text-main w-100 fw-Medium mt-4 px-2">
                 ۰۱:۵۸
-              </div>
-              <button class="d-flex align-items-center bg-main border-0 h-48 justify-content-center rounded-8 text-white w-100 fw-Medium mt-2 px-2">ورود</button>
+              </button>
+              <button id="submit-button" disabled class="button d-flex align-items-center bg-main border-0 h-48 justify-content-center rounded-8 text-white w-100 fw-Medium mt-2 px-2">ورود</button>
               <div class="mt-5 mt-lg-0 pt-1">
-                <a class="rounded-16 bg-gray6 w-144 h-32 mx-auto d-flex align-items-center justify-content-center gap-2 text-dark5 mt-5">
+                <a class="rounded-16 bg-gray6 w-144 h-32 mx-auto d-flex align-items-center justify-content-center gap-2 text-dark5 dark5hover mt-5">
                   <p class="mb-0 fs-14">۰۹۳۵۷۸۹۴۵۶۰ </p>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.64578 9.27708L9.10615 2.94433C9.93734 2.12956 11.2855 2.12956 12.1167 2.94433L12.9796 3.79018C13.8108 4.60495 13.8108 5.92648 12.9796 6.74125L6.49374 13.099C6.12287 13.4625 5.62005 13.6665 5.09521 13.6665H2.43903C2.19228 13.6665 1.99399 13.4672 2.00014 13.2254L2.06695 10.5982C2.08024 10.1017 2.28751 9.62827 2.64578 9.27708ZM12.3587 4.39879L11.4958 3.55294C11.0075 3.07429 10.2153 3.07429 9.72702 3.55294L9.22549 4.04457L11.8575 6.624L12.3587 6.13264C12.847 5.654 12.847 4.87744 12.3587 4.39879ZM3.26665 9.88569L8.60461 4.65318L11.2366 7.23261L5.87286 12.4904L5.80152 12.5544C5.60447 12.7162 5.35481 12.8058 5.09521 12.8058L2.88897 12.8055L2.94472 10.6202C2.95209 10.3445 3.06751 10.0809 3.26665 9.88569ZM14 13.2362C14 12.9986 13.8034 12.8059 13.561 12.8059H8.98066L8.92109 12.8098C8.7068 12.8383 8.54164 13.0184 8.54164 13.2362C8.54164 13.4739 8.73819 13.6666 8.98066 13.6666H13.561L13.6205 13.6627C13.8348 13.6342 14 13.4541 14 13.2362Z" fill="#4F4F4F"/>
@@ -56,6 +56,7 @@
   </section>
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/otp.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 
