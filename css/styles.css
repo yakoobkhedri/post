@@ -1379,6 +1379,9 @@ input[type=number].error:focus {
     border: 1px solid #14489D;
     background-color: white;
 }
+input[type='tel'],input[type='email'] {
+  direction: ltr;
+}
 /*  input validate */
 .firstSuccess,
 .lastSuccess,

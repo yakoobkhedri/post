@@ -20,17 +20,17 @@
       <div class="g-3 row mt-2 mt-lg-4 mx-0 px-0">
         <div class="col-lg-6">
           <div class="d-flex align-items-center bg-white h-100 justify-content-center p-4 rounded-22 shadow-2 shadow-lg-none px-0 px-lg-4">
-            <form class="max-w-415 mx-auto">
+            <form onsubmit="return validateForm()" class="max-w-415 mx-auto">
               <h4 class="text-center text-lg-black text-main2 fs-20 fs-sm-14 fw-bold">ورود به پنل</h4>
               <div class="mt-5 mt-lg-4">
                 <div>
                   <label class="fs-14 fs-sm-12 fw-bold">نام کاربری</label>
-                  <input placeholder="نام کاربری را وارد کنید"
+                  <input required placeholder="نام کاربری را وارد کنید"
                     class="d-block bg-gray5 border-gray h-48 rounded-8 text-center w-100 fs-14 mt-2 outline-none px-3">
                 </div>
                 <div class="mt-3">
                   <label class="fs-14 fs-sm-12 fw-bold">رمز عبور</label>
-                  <input placeholder="شامل حروف بزرگ و کوچک و اعداد و علائم"
+                  <input required id="password" placeholder="شامل حروف بزرگ و کوچک و اعداد و علائم"
                     class="d-block bg-gray5 border-gray h-48 rounded-8 text-center w-100 fs-14 mt-2 outline-none px-3">
                 </div>
               </div>
@@ -47,7 +47,7 @@
   </section>
 
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/password.js"></script>
 </body>
 
 </html>
