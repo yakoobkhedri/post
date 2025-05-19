@@ -18,3 +18,19 @@ setupAccordion();
 
 // اجرای تابع در صورت تغییر اندازه صفحه
 // window.addEventListener('resize', setupAccordion);
+
+
+// dropdown
+
+let openDropDown = Array.from(document.getElementsByClassName('openDropDown'));
+
+openDropDown.forEach((item)=>{
+  item.addEventListener('click', function () {
+    item.nextElementSibling.classList.toggle('active');
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('.DropdownArea')) {
+        item.nextElementSibling.classList.remove('active');
+      }
+    })
+  })
+})
